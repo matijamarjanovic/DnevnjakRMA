@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DnevnjakRMA</string>
+    <string name="calendar">Kalendar</string>
+    <string name="daily">Dnevni Plan</string>
+    <string name="profile">Profil</string>
+    <string name="mon">Ponedeljak</string>
+    <string name="tue">Utorak</string>
+    <string name="wed">Sreda</string>
+    <string name="thur">Cetvrtak</string>
+    <string name="fri">Petak</string>
+    <string name="sat">Subota</string>
+    <string name="sun">Nedelja</string>
+    <string name="checkbox">Prikazi prosle obaveze</string>
+    <string name="all">Svi</string>
+    <string name="low">Nisko</string>
+    <string name="mid">Osrednje</string>
+    <string name="high">Visoko</string>
+    <string name="walkdog">Setanje Psa</string>
+    <string name="dentist">Zubar</string>
+    <string name="algebra">Lekcija iz algebre</string>
+    <string name="meeting">Sastanak</string>
+
+</resources>

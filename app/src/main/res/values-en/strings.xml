@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DnevnjakRMA</string>
+    <string name="calendar">Calendar</string>
+    <string name="daily">Daily Plan</string>
+    <string name="profile">Profile</string>
+    <string name="mon">Monday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thur">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+    <string name="tue">Tuesday</string>
+    <string name="checkbox">Show past obligations</string>
+    <string name="all">All</string>
+    <string name="low">Low</string>
+    <string name="mid">Mid</string>
+    <string name="high">High</string>
+    <string name="walkdog">Walk the dog</string>
+    <string name="dentist">Dentist</string>
+    <string name="algebra">Algebra lecture</string>
+    <string name="meeting">Meeting</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/calFragFcv">
+
+    <TextView
+        android:id="@+id/monthTv"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_height="56dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dayslin"
+        app:layout_constraintTop_toTopOf="@id/listRv"
+        />
+
+    <LinearLayout
+        android:id="@+id/dayslin"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:weightSum="7"
+        app:layout_constraintBottom_toTopOf="@+id/listRv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monthTv">
+
+        <TextView
+            android:id="@+id/monTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tueTv" />
+
+        <TextView
+            android:id="@+id/tueTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/wedTv"
+            app:layout_constraintStart_toEndOf="@id/monTv" />
+
+        <TextView
+            android:id="@+id/wedTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/thurTv"
+            app:layout_constraintStart_toEndOf="@id/tueTv" />
+
+        <TextView
+            android:id="@+id/thurTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/friTv"
+            app:layout_constraintStart_toEndOf="@id/wedTv" />
+
+        <TextView
+            android:id="@+id/friTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/satTv"
+            app:layout_constraintStart_toEndOf="@id/thurTv" />
+
+        <TextView
+            android:id="@+id/satTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/sunTv"
+            app:layout_constraintStart_toEndOf="@id/friTv" />
+
+        <TextView
+            android:id="@+id/sunTv"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/satTv" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/dayslin"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
